@@ -1,0 +1,33 @@
+{
+	"TargetName" : "InteractiveStoryEditor",
+	"Platform" : "Win64",
+	"Configuration" : "Development",
+	"BuildId" : "f05f69cc-8f3b-41b1-84c4-cf1aef19e05d",
+	"Version" : 
+	{
+		"MajorVersion" : 4,
+		"MinorVersion" : 11,
+		"PatchVersion" : 1,
+		"Changelist" : 2934540,
+		"IsLicenseeVersion" : 0,
+		"BranchName" : "++UE4+Release-4.11"
+	},
+	"BuildProducts" :
+	[
+		{
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveStory-1982.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveStory-1982.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-InteractiveStory-1982.lib",
+			"Type" : "ImportLibrary"
+		}
+	],
+	"RuntimeDependencies" :
+	[
+	]
+}

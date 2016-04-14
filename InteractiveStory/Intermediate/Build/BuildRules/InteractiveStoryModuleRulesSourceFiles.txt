@@ -1,0 +1,3 @@
+C:\Users\MaxLGilbert\Documents\Unreal Projects\interactive_story_arcs\InteractiveStory\Source\InteractiveStory\InteractiveStory.Build.cs
+C:\Users\MaxLGilbert\Documents\Unreal Projects\interactive_story_arcs\InteractiveStory\Source\InteractiveStory.Target.cs
+C:\Users\MaxLGilbert\Documents\Unreal Projects\interactive_story_arcs\InteractiveStory\Source\InteractiveStoryEditor.Target.cs
