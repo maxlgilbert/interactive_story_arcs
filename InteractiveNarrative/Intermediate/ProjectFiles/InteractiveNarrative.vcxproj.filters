@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\InteractiveNarrative.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F4AB7B09-9B38-4569-BAF1-0B81403AC778}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InteractiveNarrative.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\InteractiveNarrativeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{BE8CA105-CD3E-4696-8BA0-8789FA6ED38A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\InteractiveNarrative">
+      <UniqueIdentifier>{451B4A56-4FA9-4805-AC4C-93D039E25F06}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InteractiveNarrative\InteractiveNarrative.Build.cs">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\InteractiveNarrative.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\InteractiveNarrative.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\InteractiveNarrativeCharacter.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\InteractiveNarrativeCharacter.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\InteractiveNarrativeGameMode.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\InteractiveNarrativeGameMode.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\SmartAction.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\SmartAction.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\SmartGlobalState.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\SmartGlobalState.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\SmartObject.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\SmartObject.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\SmartObjectState.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\SmartObjectState.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\StoryManager.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\StoryManager.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\InteractiveNarrative\StoryPlanner.h">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\InteractiveNarrative\StoryPlanner.cpp">
+      <Filter>Source\InteractiveNarrative</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

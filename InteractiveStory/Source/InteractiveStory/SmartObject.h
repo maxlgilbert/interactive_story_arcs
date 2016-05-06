@@ -3,15 +3,15 @@
 #pragma once
 
 #include "Components/ActorComponent.h"
-#include "SmartObjectState.h"
+//#include "SmartObjectState.h"
 #include "SmartObject.generated.h"
 
-UENUM(BlueprintType)
-enum class ESmartObjectTypeEnum : uint8
-{
-	SOTE_Ball			UMETA(DisplayName = "Ball"),
-	SOTE_Bear			UMETA(DisplayName = "Bear"),
-};
+//UENUM(BlueprintType)
+//enum class ESmartObjectTypeEnum : uint8
+//{
+//	SOTE_Ball			UMETA(DisplayName = "Ball"),
+//	SOTE_Bear			UMETA(DisplayName = "Bear"),
+//};
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -33,9 +33,9 @@ public:
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
 
-	// Type of object for setting fields and location in global state
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Planning)
-	ESmartObjectTypeEnum objectType;
+	//// Type of object for setting fields and location in global state
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Planning)
+	//ESmartObjectTypeEnum objectType;
 
 	// Number instance of this type of object
 	UPROPERTY()
@@ -43,7 +43,7 @@ public:
 
 private:
 
-	SmartObjectState objectState;
+	//SmartObjectState objectState;
 
 		
 	

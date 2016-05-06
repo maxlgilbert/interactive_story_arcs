@@ -21,7 +21,7 @@ void USmartObject::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	objectState = SmartObjectState();
+	//objectState = SmartObjectState();
 
 	// ...
 	

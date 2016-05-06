@@ -1,79 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\InteractiveStory.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{4D2EC0C4-1D82-446A-A5BE-0DBCE1D2FACA}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\InteractiveStory.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\InteractiveStoryEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{9AAC2B63-1CB2-40E2-A864-954D6EDF03E0}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\InteractiveStory">
-      <UniqueIdentifier>{642017AD-D118-4F6F-93D3-9FD6F8FC6D1F}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\InteractiveStory\InteractiveStory.Build.cs">
-      <Filter>Source\InteractiveStory</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\InteractiveStory\InteractiveStory.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\InteractiveStory\InteractiveStory.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\InteractiveStory\InteractiveStoryCharacter.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\InteractiveStory\InteractiveStoryCharacter.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\InteractiveStory\InteractiveStoryGameMode.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\InteractiveStory\InteractiveStoryGameMode.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\InteractiveStory\SmartObjectState.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\InteractiveStory\SmartObject.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\InteractiveStory\SmartGlobalState.h">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\InteractiveStory\SmartObjectState.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\InteractiveStory\SmartObject.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\InteractiveStory\SmartGlobalState.cpp">
-      <Filter>Source\InteractiveStory</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\InteractiveStory.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{F0794BD4-9318-4EF5-96AE-1BBD4BBD213D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\InteractiveStory.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\InteractiveStoryEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{747D2F71-FAA3-413A-8163-8F5CEB358D1B}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\InteractiveStory">
+			<UniqueIdentifier>{19C46326-AD11-45C6-B1CF-813C77987516}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\InteractiveStory\InteractiveStory.Build.cs">
+			<Filter>Source\InteractiveStory</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\InteractiveStory\InteractiveStory.cpp">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\InteractiveStory\InteractiveStory.h">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\InteractiveStory\InteractiveStoryCharacter.cpp">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\InteractiveStory\InteractiveStoryCharacter.h">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\InteractiveStory\InteractiveStoryGameMode.cpp">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\InteractiveStory\InteractiveStoryGameMode.h">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\InteractiveStory\SmartObject.cpp">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\InteractiveStory\SmartObject.h">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\InteractiveStory\StoryManager.cpp">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\InteractiveStory\StoryManager.h">
+			<Filter>Source\InteractiveStory</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>

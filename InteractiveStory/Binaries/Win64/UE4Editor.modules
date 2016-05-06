@@ -1,8 +1,8 @@
 {
-	"Changelist" : 2934540,
-	"BuildId" : "f05f69cc-8f3b-41b1-84c4-cf1aef19e05d",
+	"Changelist" : 2946394,
+	"BuildId" : "7d7b8cc1-f20a-4c4c-a382-e539ecd56312",
 	"Modules" : 
 	{
-		"InteractiveStory" : "UE4Editor-InteractiveStory-1982.dll"
+		"InteractiveStory" : "UE4Editor-InteractiveStory-5417.dll"
 	}
 }
