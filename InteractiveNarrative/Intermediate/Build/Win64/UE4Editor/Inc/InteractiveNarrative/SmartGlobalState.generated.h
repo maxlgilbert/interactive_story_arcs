@@ -18,9 +18,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	INTERACTIVENARRATIVE_API static class UScriptStruct* StaticStruct();
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_RPC_WRAPPERS
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_RPC_WRAPPERS_NO_PURE_DECLS
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_INCLASS_NO_PURE_DECLS \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_RPC_WRAPPERS
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_RPC_WRAPPERS_NO_PURE_DECLS
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUSmartGlobalState(); \
 	friend INTERACTIVENARRATIVE_API class UClass* Z_Construct_UClass_USmartGlobalState(); \
@@ -31,7 +31,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_INCLASS \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_INCLASS \
 	private: \
 	static void StaticRegisterNativesUSmartGlobalState(); \
 	friend INTERACTIVENARRATIVE_API class UClass* Z_Construct_UClass_USmartGlobalState(); \
@@ -42,7 +42,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_STANDARD_CONSTRUCTORS \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API USmartGlobalState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USmartGlobalState) \
@@ -54,7 +54,7 @@ private: \
 public:
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_ENHANCED_CONSTRUCTORS \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API USmartGlobalState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -66,23 +66,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USmartGlobalState); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USmartGlobalState)
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_63_PROLOG
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_GENERATED_BODY_LEGACY \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_61_PROLOG
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_RPC_WRAPPERS \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_INCLASS \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_STANDARD_CONSTRUCTORS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_RPC_WRAPPERS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_INCLASS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_GENERATED_BODY \
+#define InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_INCLASS_NO_PURE_DECLS \
-	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_66_ENHANCED_CONSTRUCTORS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_INCLASS_NO_PURE_DECLS \
+	InteractiveNarrative_Source_InteractiveNarrative_SmartGlobalState_h_64_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

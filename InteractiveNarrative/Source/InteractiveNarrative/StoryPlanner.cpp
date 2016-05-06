@@ -3,22 +3,28 @@
 #include "InteractiveNarrative.h"
 #include "StoryPlanner.h"
 
-TArray<FSmartEvent> UStoryPlanner::Plan(FStateNode *startState, FStateNode *goalState, TArray<ASmartAction *> actions)
+TArray<FSmartEvent> UStoryPlanner::Plan(FStateNode startState, FStateNode goalState, TArray<ASmartAction *> actions)
 {
 	TArray<FSmartEvent> events;
 	TSet<FString> visited;
 
 	TArray< FStateNode> heap = TArray<FStateNode>();
-	heap.HeapPush(*startState);
-
+	heap.HeapPush(startState);
+	int32 iterations = 0;
 	while (heap.Num() > 0)
 	{
-		FStateNode currNode = heap.Pop();
+		iterations++;
+		if (iterations > 10)
+			return events;
+
+		FStateNode currNode;
+		heap.HeapPop(currNode);
 		FString currName = currNode.ToString();
+		UE_LOG(LogTemp, Warning, TEXT("Heap position node: %s"), *currName);
 		if (!visited.Contains(currName))
 		{
 			visited.Add(currName);
-			if (currNode.isEqual(*goalState))
+			if (currNode.isEqual(goalState))
 			{
 				return ReconstructPath(currNode);
 			}
@@ -27,7 +33,11 @@ TArray<FSmartEvent> UStoryPlanner::Plan(FStateNode *startState, FStateNode *goal
 				TArray<FStateNode> neighbors = actions[i]->GenerateNeighbors(currNode);
 				for (int32 j = 0; j < neighbors.Num(); j++)
 				{
-					heap.HeapPush(neighbors[j]);
+					FString neighborName = neighbors[j].ToString();
+					if (!visited.Contains(neighborName))
+					{
+						heap.HeapPush(neighbors[j]);
+					}
 				}
 			}
 		}
@@ -36,7 +46,7 @@ TArray<FSmartEvent> UStoryPlanner::Plan(FStateNode *startState, FStateNode *goal
 	return events;
 }
 
-TArray<FSmartEvent> UStoryPlanner::ReconstructPath(const FStateNode& end)
+TArray<FSmartEvent> UStoryPlanner::ReconstructPath(const FStateNode end)
 {
 	TArray<FSmartEvent> events;
 	FStateNode curr = end;

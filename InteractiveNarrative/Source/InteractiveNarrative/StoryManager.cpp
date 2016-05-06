@@ -120,7 +120,7 @@ void AStoryManager::TestGlobalState()
 void AStoryManager::TestPlan()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Started planning"));
-	TArray<FSmartEvent> eventSequence = storyPlanner->Plan(&currentGlobalState->globalStateNode, &goalState->globalStateNode, smartActions);
+	TArray<FSmartEvent> eventSequence = storyPlanner->Plan(currentGlobalState->globalStateNode, goalState->globalStateNode, smartActions);
 
 	UE_LOG(LogTemp, Warning, TEXT("Plan length: %i"),eventSequence.Num());
 

@@ -112,7 +112,7 @@
 //}
 
 
-FString FStateNode::ToString()
+ FString FStateNode::ToString() const
 {
 	FString stringReturn = "";
 	TArray<FString> stringKeys;
@@ -143,7 +143,7 @@ int32 FStateNode::getDistanceToState(const USmartGlobalState* other)  const
 			TArray<float> secondValues = other->globalStateNode.globalState[objectKeys[i]]->objectState;
 			for (int32 k = 0; k < firstValues.Num(); k++)
 			{
-				if (firstValues[k] != secondValues[k])
+				if (fabs(firstValues[k] - secondValues[k])>.0001)
 				{
 					distanceToState++;
 				}
@@ -172,11 +172,11 @@ FStateNode FStateNode::copyGlobalState() const
 	return newState;
 }
 
-bool FStateNode::isEqual(const FStateNode &other)
+bool FStateNode::isEqual(const FStateNode other)
 {
-	int32 distanceToState = 0;
 	TArray<FString> objectKeys;
 	this->globalState.GetKeys(objectKeys);
+
 	for (int32 i = 0; i < objectKeys.Num(); i++)
 	{
 		if (other.globalState.Contains(objectKeys[i]))
@@ -186,7 +186,7 @@ bool FStateNode::isEqual(const FStateNode &other)
 			TArray<float> secondValues = other.globalState[objectKeys[i]]->objectState;
 			for (int32 k = 0; k < firstValues.Num(); k++)
 			{
-				if (secondValues[k] >= 0 && firstValues[k] != secondValues[k])
+				if (secondValues[k] >= 0 && fabs(firstValues[k]- secondValues[k]) > .0001)
 				{
 					return false;
 				}

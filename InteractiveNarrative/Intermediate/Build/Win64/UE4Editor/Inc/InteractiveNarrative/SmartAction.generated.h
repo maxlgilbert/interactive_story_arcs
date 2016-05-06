@@ -18,9 +18,9 @@ struct FStateNode;
  \
 	DECLARE_FUNCTION(execGenerateNeighbors) \
 	{ \
-		P_GET_STRUCT_REF(FStateNode,Z_Param_Out_parentNode); \
+		P_GET_STRUCT(FStateNode,Z_Param_parentNode); \
 		P_FINISH; \
-		*(TArray<FStateNode>*)Z_Param__Result=this->GenerateNeighbors(Z_Param_Out_parentNode); \
+		*(TArray<FStateNode>*)Z_Param__Result=this->GenerateNeighbors(Z_Param_parentNode); \
 	}
 
 
@@ -28,9 +28,9 @@ struct FStateNode;
  \
 	DECLARE_FUNCTION(execGenerateNeighbors) \
 	{ \
-		P_GET_STRUCT_REF(FStateNode,Z_Param_Out_parentNode); \
+		P_GET_STRUCT(FStateNode,Z_Param_parentNode); \
 		P_FINISH; \
-		*(TArray<FStateNode>*)Z_Param__Result=this->GenerateNeighbors(Z_Param_Out_parentNode); \
+		*(TArray<FStateNode>*)Z_Param__Result=this->GenerateNeighbors(Z_Param_parentNode); \
 	}
 
 

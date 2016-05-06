@@ -24,7 +24,7 @@ class INTERACTIVENARRATIVE_API UStoryPlanner : public UObject
 {
 	GENERATED_BODY()
 public:
-	TArray<FSmartEvent> Plan(FStateNode *startState, FStateNode *goalState, TArray<ASmartAction*> actions);
-	TArray<FSmartEvent> ReconstructPath(const FStateNode& end);
+	TArray<FSmartEvent> Plan(FStateNode startState, FStateNode goalState, TArray<ASmartAction*> actions);
+	TArray<FSmartEvent> ReconstructPath(const FStateNode end);
 
 };

@@ -23,7 +23,7 @@ public:
 
 	// Planning
 	UFUNCTION(BlueprintCallable, Category = Planning)
-	TArray<FStateNode > GenerateNeighbors(const FStateNode &parentNode);
+	TArray<FStateNode > GenerateNeighbors(const FStateNode parentNode);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Planning)
 		FString actionName;

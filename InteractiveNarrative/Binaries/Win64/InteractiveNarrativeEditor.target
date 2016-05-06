@@ -2,7 +2,7 @@
 	"TargetName" : "InteractiveNarrativeEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "7a83c47c-3549-423f-a337-8271de11e33a",
+	"BuildId" : "93884b56-5a1c-4fbc-a507-b689cbeafe15",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveNarrative-6846.dll",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveNarrative.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveNarrative-6846.pdb",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-InteractiveNarrative.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-InteractiveNarrative-6846.lib",
+			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-InteractiveNarrative.lib",
 			"Type" : "ImportLibrary"
 		}
 	],

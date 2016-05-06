@@ -31,7 +31,7 @@ void ASmartAction::Tick( float DeltaTime )
 }
 
 
-TArray<FStateNode > ASmartAction::GenerateNeighbors(const FStateNode &parentNode)
+TArray<FStateNode > ASmartAction::GenerateNeighbors(const FStateNode parentNode)
 {
 	TArray<FStateNode > neighborStates;
 	TArray<FString> objectKeys;

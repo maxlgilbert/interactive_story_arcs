@@ -66,7 +66,7 @@ static struct FScriptStruct_InteractiveNarrative_StaticRegisterNativesFStateNode
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ASmartAction::StaticClass(), "GenerateNeighbors",(Native)&ASmartAction::execGenerateNeighbors);
 	}
-	IMPLEMENT_CLASS(ASmartAction, 498150311);
+	IMPLEMENT_CLASS(ASmartAction, 1423898192);
 	void AStoryManager::StaticRegisterNativesAStoryManager()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AStoryManager::StaticClass(), "AddSmartAction",(Native)&AStoryManager::execAddSmartAction);
@@ -466,10 +466,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GenerateNeighbors"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04420401, 65535, sizeof(SmartAction_eventGenerateNeighbors_Parms));
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GenerateNeighbors"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(SmartAction_eventGenerateNeighbors_Parms));
 			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(ReturnValue, SmartAction_eventGenerateNeighbors_Parms), 0x0010000000000580);
 			UProperty* NewProp_ReturnValue_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FStateNode());
-			UProperty* NewProp_parentNode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("parentNode"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(parentNode, SmartAction_eventGenerateNeighbors_Parms), 0x0010000008000182, Z_Construct_UScriptStruct_FStateNode());
+			UProperty* NewProp_parentNode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("parentNode"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(parentNode, SmartAction_eventGenerateNeighbors_Parms), 0x0010000000000082, Z_Construct_UScriptStruct_FStateNode());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -509,7 +509,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_objectType = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("objectType"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(objectType, ASmartAction), 0x0010000000000005);
 				UProperty* NewProp_actionName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("actionName"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(actionName, ASmartAction), 0x0010000000000005);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ASmartAction_GenerateNeighbors(), "GenerateNeighbors"); // 649188655
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ASmartAction_GenerateNeighbors(), "GenerateNeighbors"); // 577934190
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -781,7 +781,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/InteractiveNarrative")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x21D5BDFD;
+			Guid.A = 0xB5953F0A;
 			Guid.B = 0xAAAEF6FF;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

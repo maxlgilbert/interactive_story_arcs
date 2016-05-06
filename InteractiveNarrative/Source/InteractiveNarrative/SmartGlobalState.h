@@ -16,13 +16,13 @@ struct FStateNode {
 		//UFUNCTION(BlueprintCallable, Category = Planning)
 		int32 getDistanceToState(const USmartGlobalState* other) const;
 
-	bool isEqual(const FStateNode &other);
+	bool isEqual(const FStateNode other);
 
 	// Copy constructor
 	FStateNode copyGlobalState() const;
 
 	//UFUNCTION(BlueprintCallable, Category = Planning)
-		FString ToString();
+		 FString ToString()const;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Planning)
 		int32 distance;
@@ -38,7 +38,7 @@ struct FStateNode {
 		int32 objectIndex;
 
 
-	const FStateNode* parentNode;
+	const FStateNode* parentNode = nullptr;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Planning)
@@ -48,13 +48,11 @@ struct FStateNode {
 };
 
 
-inline bool operator<(const FStateNode& A, const FStateNode& B)
+inline bool operator<(const FStateNode A, const FStateNode B)
 {
-
 	float distanceToGoalThis = A.getDistanceToState(A.goalState);
 	float distanceToGoalOther = B.getDistanceToState(B.goalState);
 	return A.distance + distanceToGoalThis < B.distance + distanceToGoalOther;
-	return true;
 }
 
 /**
